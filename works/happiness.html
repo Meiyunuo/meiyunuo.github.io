@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happiness and Longevity</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>Happiness and Longevity</h1>
+
+<div class="info">
+  <p><strong>Installation.</strong> Material: tree, pearl</p>
+  <p><strong>Size:</strong> 180 × 50 cm</p>
+  <p><strong>Time:</strong> 2022</p>
+  <p><strong>Explanation:</strong> Since an internship at Shanghai Fashion Week, I developed my love of trees into a deeper thought—the ambiguous divisions and complex symbiosis between the natural and the man-made in “Happiness And Longevity”. When I found this withered tree with mushrooms, snails, and various insects lying on the side of the road, I was immediately captivated by it. I am obsessed with this state between life and death. Human beings come from nature, pearl jewelry is made by people, and inspired by the fact that I often wear pearl jewelry, I realized that "ecology" for me is a messy collection and interdependence of matter, artifacts, and species within particular spaces and timeframes. I used thousands of pearls set in the cracks of the tree, drawing inspiration from both a simulation of pomacea canaliculata's spawn-laying phenomenon and from my imagination of a kind of wormhole in the trunk of the tree. I aimed to depict how a deceased plant can transform into a habitat for various life forms such as insects, bacteria, birds, and other organisms. Therefore, life and death will flow between things, and interdependence may be the mystery of the biological world. Everything comes full circle, which is exactly what I mean by "Happiness and longevity".</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/happiness/happiness-1.jpg" alt="Happiness 1">
+  <img src="../images/happiness/happiness-2.jpg" alt="Happiness 2">
+  <img src="../images/happiness/happiness-3.jpg" alt="Happiness 3">
+  <img src="../images/happiness/happiness-4.jpg" alt="Happiness 4">
+  <img src="../images/happiness/happiness-5.jpg" alt="Happiness 5">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<a class="back-button" href="../works.html">Back to Works</a>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

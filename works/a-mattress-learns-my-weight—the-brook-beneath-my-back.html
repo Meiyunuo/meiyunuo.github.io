@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A Mattress Learns My Weight—the brook beneath my back</title>
+
+<style>
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    line-height: 1.6;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  .info {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-size: 15px;
+  }
+
+  .gallery {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    object-fit: cover;
+    background: #fafafa;
+  }
+
+  /* Lightbox */
+  #lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 20px;
+  }
+
+  #lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    object-fit: contain;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>A Mattress Learns My Weight—the brook beneath my back</h1>
+
+<div class="info">
+  <p><strong>Type:</strong> Images</p>
+  <p><strong>Material:</strong> Bamboo mat pieces, Metal Lightbox</p>
+  <p><strong>Size:</strong> 87 × 111 × 8 cm</p>
+  <p><strong>Time:</strong> 2025</p>
+
+  <p><strong>Description:</strong>  
+    I have personified the intimate bond between myself and the summer mat—a domestic object that has accompanied me quietly since childhood. Commonly known as a “mahjong mat” for its resemblance to the game tiles, formed from bamboo pieces linked by thread. Its surface brings the coolness of summer, yet the narrow gaps between the slats would often catch strands of my hair or pinch my skin—tiny moments of discomfort woven into a larger pattern of care. Like a clothing label that occasionally grazes the skin, those tiny stings became part of my daily bodily intimacy with the mat, shifting into a tolerable foreign body sensation. It is precisely through these subtle discomforts that we continue to coexist, silently affirming each other's presence. 
+    <br><br>
+    This friction—never sharp enough to reject—formed the unease and dependence woven through my daily memories. Throughout my childhood, I used it year after year. It gradually became a private archive of my body, carrying love and friction, comfort and resistance, stillness and entanglement. Over time, this mat not only recorded the imprints of my body but also shared the breath of my daily life. I disassembled the mat and used printmaking techniques to thin and carve it, reconstructing the posture of my childhood side-sleeping. The varying pressure my body applied to the surface translated into areas of differing thickness. What I carve is not the image itself, but the tactile echoes pressed deep into the fibers.
+    <br><br>
+    The childhood body sank into the mat’s texture—year after year of lying on my side, turning, sweating, enduring. Eventually, memory was compressed into the gaps between bamboo slats. Those nearly imperceptible presences and interrupted traces compose the memory structure of our shared space—we dwell in each other’s presence, extending one another. Though the body has long since departed, the perception remains. The tactile echoes left in the material form a ghostly structure of sensation. 
+    <br><br>
+    In the process of carving, I try to listen to everything the material has absorbed and preserved, refining an ineffable bodily experience into layers of matter, the thickness of light, and the order of arrangement. Bamboo was once a living organism. In its growth, aging, and adaptation, it accompanied my family and me. Its fibers carry temporality themselves—a living memory intertwined with mine. In this sense, the mat and I entered into a long-term cohabitation—a quiet, persistent symbiosis. Through the passage of time, we exchanged warmth, wear, and memory.
+  </p>
+</div>
+
+<div class="gallery">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-01.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-02.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-03.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-04.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-05.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-06.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-07.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-08.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-09.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-10.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-11.jpg">
+  <img src="../images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-12.jpg">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<script>
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

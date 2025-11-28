@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Fingers with a Sense of Loss</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>The Fingers with a Sense of Loss</h1>
+
+<div class="info">
+  <p><strong>Type:</strong> Images</p>
+  <p><strong>Material:</strong> Wooden blinds</p>
+  <p><strong>Size:</strong> 150 × 135 cm</p>
+  <p><strong>Time:</strong> 2025</p>
+  <p><strong>Description:</strong> It is both furniture and ruin. This is a collapse of structure—like abandoned skin, it has lost the surface to cling to. Like a limb with loosened joints, it hangs slack, as if caught in the midst of a transformation into something unknowable. Weary and unresolved, it falters in the process of becoming, struggling to settle into a new form.</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/the-fingers-with-a-sense-of-loss/fingers-1.jpg" alt="Fingers 1">
+  <img src="../images/the-fingers-with-a-sense-of-loss/fingers-2.jpg" alt="Fingers 2">
+  <img src="../images/the-fingers-with-a-sense-of-loss/fingers-3.jpg" alt="Fingers 3">
+  <img src="../images/the-fingers-with-a-sense-of-loss/fingers-4.jpg" alt="Fingers 4">
+  <img src="../images/the-fingers-with-a-sense-of-loss/fingers-5.jpg" alt="Fingers 5">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<a class="back-button" href="../works.html">Back to Works</a>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

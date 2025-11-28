@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Encounter</title>
+
+<!-- 正确引用外部 CSS -->
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<h1>Encounter</h1>
+
+<div class="gallery">
+  <img src="../images/encounter/encounter-1.jpg" alt="">
+  <img src="../images/encounter/encounter-2.jpg" alt="">
+  <img src="../images/encounter/encounter-3.jpg" alt="">
+  <img src="../images/encounter/encounter-4.jpg" alt="">
+</div>
+
+<h2>作品信息</h2>
+<p>Installation. Material: nail tips, tree, knife, sofa. Variable dimensions. Time: 2021.</p>
+
+<h2>作品阐释</h2>
+<p>"Encounter" is a continuation of "Stray Birds", the former has birds and the latter does not. Does kitchenware only meet gas ranges, fridges, and food? I created an encounter for trees, kitchenware, and sofa. The work incorporates injurious utensils commonly used in the kitchen into a tree trunk, and one of the knives becomes a bird's wing. And I put fake nails on the tip of knives in an attempt to neutralize its sharpness.</p>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

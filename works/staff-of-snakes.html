@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Staff of Snakes</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>Staff of Snakes</h1>
+
+<div class="info">
+  <p><strong>Installation</strong></p>
+  <p>Material: nail tips, tree, sofa</p>
+  <p>Size: 138 × 110 × 90 cm</p>
+  <p>Time: 2022</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/staff-of-snakes/staff-of-snakes-1.jpg" alt="Staff of Snakes 1">
+  <img src="../images/staff-of-snakes/staff-of-snakes-2.jpg" alt="Staff of Snakes 2">
+  <img src="../images/staff-of-snakes/staff-of-snakes-3.jpg" alt="Staff of Snakes 3">
+</div>
+
+<div class="info">
+  <p>作品阐释：“Staff of Snakes” carries my reflection on my preference for trees. I often incorporate trees into my work due to a childhood dependence on them. Influenced by childhood dependence on trees and talking trees in fairy tales, when I confront challenges, it's almost instinctive to seek answers from the forest. It's as if we inherently turn to our roots, finding a narrative path in the forest. Joseph Beuys also states that the tree serves as a medium for regeneration, as it has the power to heal the injuries and pains endured by itself and the land it covers. The tree is seen as a carrier of time as a force, just as nails are also manifestation of life and time. "Staff of Snakes" features a curved tree trunk wrapped in nail tips that gradate from blue to pink. The Rod of Asclepius, also known as the Staff of Snakes, is a staff entwined with a snake. It’s a symbol of medicine in Europe today and a commemoration of the ancient Greek god of healing, Asclepius. The symbolism of the snake lies in its annual molting, traditionally representing a process of renewal. The Tree of Life is the central symbol of the ancient Egyptian belief in the concept of resurrection. Continuing my ongoing exploration of trees and nail tips in my artworks, I have observed that the accumulated layers of nail tips are similar to snake skins. When placed on a curved tree trunk, it gives rise to a completely new and unfamiliar life form. The theme of interspecies communication remains a compelling artistic proposition for me.</p>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<a class="back-button" href="../works.html">Back to Works</a>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Snake Mountain</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>Snake Mountain</h1>
+
+<div class="info">
+  <p><strong>Installation.</strong> Material: nail tips, tree, stone, acrylic sheet, acrylic paint, watercolour, tung oil</p>
+  <p><strong>Size:</strong> variable dimensions</p>
+  <p><strong>Time:</strong> 2023</p>
+  <p><strong>Description:</strong> I wrapped a tree in nail tips and placed it among the piles of stones, and the “staff” was transformed into a “snake” that shuttled it. Together with the acrylic slices representing water, they form a landscape imagery. I painted some of the aquatic creatures on acrylic, reproducing and recreating their forms as if in a prism. As an inorganic substance, the stone is almost as long as the life of the earth, and it represents a primitive substance in the universe, symbolizing the most primitive memories of the earth. Nails symbolize the transience of existence. After the touch of passing years, nails grow endlessly, and stones are precipitated by the sun and the moon. In the memories of time, only that which is ephemeral is lasting. The multiple dialogues created between nail tips, tree, stone, and acrylic invite the audience to contemplate the profound interplay of time, nature, and human experience.</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/snake-mountain/snake-mountain-1.jpg" alt="Snake Mountain 1">
+  <img src="../images/snake-mountain/snake-mountain-2.jpg" alt="Snake Mountain 2">
+  <img src="../images/snake-mountain/snake-mountain-3.jpg" alt="Snake Mountain 3">
+  <img src="../images/snake-mountain/snake-mountain-4.jpg" alt="Snake Mountain 4">
+  <img src="../images/snake-mountain/snake-mountain-5.jpg" alt="Snake Mountain 5">
+  <img src="../images/snake-mountain/snake-mountain-6.jpg" alt="Snake Mountain 6">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<a class="back-button" href="../works.html">Back to Works</a>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

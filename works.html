@@ -1,28 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Works - Meiyunuo Jiao</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Works</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+  }
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .work-item {
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .work-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .work-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+  .work-item h2 {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #111;
+  }
+
+  @media (max-width: 768px) {
+    .work-item img {
+      height: 180px;
+    }
+  }
+  @media (max-width: 480px) {
+    .work-item img {
+      height: 150px;
+    }
+  }
+</style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="works.html">Works</a>
-    <a href="artist-statement.html">Artist Statement</a>
-    <a href="about.html">About</a>
-    <a href="exhibition.html">Exhibition</a>
-  </nav>
-  <main>
-    <h1>Stray Birds</h1>
-    <div class="gallery">
-      <img src="images/翅膀.jpeg" alt="Stray Birds 1">
-      <img src="images/翅膀1.jpeg" alt="Stray Birds 2">
-      <img src="images/翅膀2.jpeg" alt="Stray Birds 3">
-      <img src="images/翅膀3.jpeg" alt="Stray Birds 4">
-      <img src="images/IMG_4047.jpg" alt="Stray Birds 5">
-      <img src="images/IMG_4048.jpg" alt="Stray Birds 6">
-    </div>
-  </main>
+
+<h1>Works</h1>
+
+<div class="works-grid">
+  <!-- Stray Birds -->
+  <div class="work-item">
+    <a href="works/stray-birds.html">
+      <img src="images/stray-birds/1.jpg" alt="Stray Birds">
+      <h2>Stray Birds</h2>
+    </a>
+  </div>
+
+  <!-- Encounter -->
+  <div class="work-item">
+    <a href="works/encounter.html">
+      <img src="images/encounter/encounter-1.jpg" alt="Encounter">
+      <h2>Encounter</h2>
+    </a>
+  </div>
+
+  <!-- Rabbit -->
+  <div class="work-item">
+    <a href="works/rabbit.html">
+      <img src="images/rabbit/rabbit-5.jpg" alt="Rabbit">
+      <h2>Rabbit</h2>
+    </a>
+  </div>
+
+  <!-- Staff of Snakes -->
+  <div class="work-item">
+    <a href="works/staff-of-snakes.html">
+      <img src="images/staff-of-snakes/staff-of-snakes-2.jpg" alt="Staff of Snakes">
+      <h2>Staff of Snakes</h2>
+    </a>
+  </div>
+
+  <!-- Happiness and Longevity -->
+  <div class="work-item">
+    <a href="works/happiness.html">
+      <img src="images/happiness/happiness-2.jpg" alt="Happiness and Longevity">
+      <h2>Happiness and Longevity</h2>
+    </a>
+  </div>
+
+  <!-- Bonfire -->
+  <div class="work-item">
+    <a href="works/bonfire.html">
+      <img src="images/bonfire/bonfire-4.jpg" alt="Bonfire">
+      <h2>Bonfire</h2>
+    </a>
+  </div>
+
+  <!-- Snake Mountain -->
+  <div class="work-item">
+    <a href="works/snake-mountain.html">
+      <img src="images/snake-mountain/snake-mountain-1.jpg" alt="Snake Mountain">
+      <h2>Snake Mountain</h2>
+    </a>
+  </div>
+
+  <!-- Ephemera -->
+  <div class="work-item">
+    <a href="works/ephemera.html">
+      <img src="images/ephemara/ephemera-1.jpg" alt="Ephemera">
+      <h2>Ephemera</h2>
+    </a>
+  </div>
+
+  <!-- My Breath is the Fold of the Skin -->
+  <div class="work-item">
+    <a href="works/my-breath-is-the-fold-of-the-skin.html">
+      <img src="images/my-breath-is-the-fold-of-the-skin/breath-1.jpg" alt="My Breath is the Fold of the Skin">
+      <h2>My Breath is the Fold of the Skin</h2>
+    </a>
+  </div>
+
+  <!-- The Fingers with a Sense of Loss -->
+  <div class="work-item">
+    <a href="works/the-fingers-with-a-sense-of-loss.html">
+      <img src="images/the-fingers-with-a-sense-of-loss/fingers-2.jpg" alt="The Fingers with a Sense of Loss">
+      <h2>The Fingers with a Sense of Loss</h2>
+    </a>
+  </div>
+
+  <!-- Veins of a Forgotten Room -->
+  <div class="work-item">
+    <a href="works/veins-of-a-forgotten-room.html">
+      <img src="images/veins-of-a-forgotten-room/veins-3.jpg" alt="Veins of a Forgotten Room">
+      <h2>Veins of a Forgotten Room</h2>
+    </a>
+  </div>
+
+  <!-- A Mattress Learns My Weight—the brook beneath my back -->
+  <div class="work-item">
+    <a href="works/a-mattress-learns-my-weight.html">
+      <img src="images/a-mattress-learns-my-weight—the-brook-beneath-my-back/mattress-03.jpg" alt="A Mattress Learns My Weight">
+      <h2>A Mattress Learns My Weight</h2>
+    </a>
+  </div>
+
+  <!-- Beneath the Loop -->
+  <div class="work-item">
+    <a href="works/beneath-the-loop.html">
+      <img src="images/beneath-the-loop/still.jpg" alt="Beneath the Loop">
+      <h2>Beneath the Loop</h2>
+    </a>
+  </div>
+</div>
+
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Breath is the Fold of the Skin</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>My Breath is the Fold of the Skin</h1>
+
+<div class="info">
+  <p><strong>Installation.</strong> Material: Wooden blinds, light</p>
+  <p><strong>Size:</strong> 160 × 130 cm</p>
+  <p><strong>Time:</strong> 2024</p>
+  <p><strong>Description:</strong> What exactly are boundaries? Where do boundaries exist? Where do we truly live? I carved on the blinds in the shape of the folds that formed on my skin after removing a plaster. I am fascinated by this quality of wood — how it transforms white light into red, echoing the red glow I saw as a child when pressing a torchlight to my hand. As I parted the blinds, I noticed how their flowing form mirrored both the folds of skin and the subtle rhythm of breath. As I carved into the blinds, it felt as though I was tracing wounds. The raised patterns began to resemble the faint marks left by nails on skin — ephemeral yet intimate. This resonance deepened my emotional connection with the blinds, as if they had absorbed something of the body.</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/my-breath-is-the-fold-of-the-skin/breath-1.jpg" alt="Breath 1">
+  <img src="../images/my-breath-is-the-fold-of-the-skin/breath-2.jpg" alt="Breath 2">
+  <img src="../images/my-breath-is-the-fold-of-the-skin/breath-3.jpg" alt="Breath 3">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<a class="back-button" href="../works.html">Back to Works</a>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

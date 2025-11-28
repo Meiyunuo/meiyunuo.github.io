@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bonfire</title>
+
+<!-- 正确引用外部 CSS，必须是这个路径 -->
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<h1>Bonfire</h1>
+
+<div class="info">
+  <p><strong>Installation.</strong> Material: tree, nail tips</p>
+  <p><strong>Size:</strong> variable dimensions</p>
+  <p><strong>Time:</strong> 2022</p>
+  <p><strong>作品阐释:</strong> Nails are the metabolites of the body, while leaves are growing and falling. I am fascinated by the feeling that they are never coming back. The three trees support each other to create the form of the bonfire, and the colors of the nail tips stuck to trees come from three different human skin colors. I again combined artificially created body parts with trees, perhaps the fake nails could be regarded as the second skin of the tree. Trees have always provided us a rough physical experience which contrasts with the elasticity, softness and smoothness of our skin. The bonfire is the reward for this chaotic imagery on a burning and joyous night.</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/bonfire/bonfire-1.jpg" alt="Bonfire 1">
+  <img src="../images/bonfire/bonfire-2.jpg" alt="Bonfire 2">
+  <img src="../images/bonfire/bonfire-3.jpg" alt="Bonfire 3">
+  <img src="../images/bonfire/bonfire-4.jpg" alt="Bonfire 4">
+  <img src="../images/bonfire/bonfire-5.jpg" alt="Bonfire 5">
+  <img src="../images/bonfire/bonfire-6.jpg" alt="Bonfire 6">
+  <img src="../images/bonfire/bonfire-7.jpg" alt="Bonfire 7">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

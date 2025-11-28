@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beneath the Loop</title>
+
+<!-- 引用统一 CSS -->
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<h1>Beneath the Loop</h1>
+
+<div class="info">
+  <p><strong>Type:</strong> Video</p>
+  <p><strong>Duration:</strong> 1 min 2 sec</p>
+  <p><strong>Time:</strong> 2025</p>
+  <p><strong>Description:</strong> 
+    Beneath the Loop traces how the body is gently pulled apart by time within a given space. 
+    In the empty circular pool, the performer repeatedly walks and gathers fallen leaves; these aimless gestures 
+    make the body seem held by the space, yet softly estranged from it. Gradually, the body loses a sense of 
+    autonomy, as if guided by the environment or an unnamed force. The boundary between self and world begins 
+    to blur. Through this moving-image approach, viewers can sense the body’s after-images—its echoes within 
+    the space—and the subtle, spectral presence that appears as perception loosens and edges dissolve.
+  </p>
+</div>
+
+<!-- Video -->
+<div class="video-wrapper">
+  <video controls poster="../images/beneath-the-loop/still.jpg">
+    <source src="../images/beneath-the-loop/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<!-- Optional thumbnail -->
+<div class="gallery">
+  <img src="../images/beneath-the-loop/still.jpg" alt="Cover Thumbnail">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<script>
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.addEventListener('click', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').style.display = 'none';
+});
+</script>
+
+</body>
+</html>

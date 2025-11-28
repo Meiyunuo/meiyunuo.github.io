@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stray Birds</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<h1>Stray Birds</h1>
+
+<div class="info">
+  <p><strong>Installation</strong></p>
+  <p>Material: nail tips, tree, knife</p>
+  <p>Size: 183 × 40 × 95 cm</p>
+  <p>Time: 2021</p>
+  <p>作品阐释：Nail tips are stuck to the metal kitchen knives to resemble wings and then scattered randomly on the branch. We can see trees, knives and nail tips, but we cannot see birds, because stray birds are an imagination. The knife's sharpness and the nail tips' softness create a set of contradictory and unrelated images, as in Tagore's poem: "There are no traces of wings in the sky, but I have flown."</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/stray-birds/stray-birds-1.jpg" alt="Stray Birds 1">
+  <img src="../images/stray-birds/stray-birds-2.jpg" alt="Stray Birds 2">
+  <img src="../images/stray-birds/stray-birds-3.jpg" alt="Stray Birds 3">
+  <img src="../images/stray-birds/stray-birds-4.jpg" alt="Stray Birds 4">
+  <img src="../images/stray-birds/stray-birds-5.jpg" alt="Stray Birds 5">
+  <img src="../images/stray-birds/stray-birds-6.jpg" alt="Stray Birds 6">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<a href="../works.html">Back to Works</a>
+
+<script>
+  // 点击缩略图弹出大图
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  // 点击 lightbox 关闭
+  document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

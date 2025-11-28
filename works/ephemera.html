@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ephemera</title>
+
+  <!-- 正确引用外部 CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<h1>Ephemera</h1>
+
+<div class="info">
+  <p><strong>Installation.</strong> Material: aluminum venetian blinds, nail tips, knife, watercolour, acrylic paints, tung oil, solid wood board</p>
+  <p>Size: 230×120cm</p>
+  <p>Time: 2023</p>
+  <p>作品阐释：I disassembled and deconstructed the paintings drawn on the blinds, when I bent them they were like layers of water ripples, permeable and fragile and elastic like skin. Meanwhile, insert the knives attached to the nail tips in the form of wings deep into the wood board. Blinds are a kind of boundary in our lives. During my childhood, I frequently peeked through blinds to observe the outside world, which evoked a strong sense of nostalgia and vulnerability. Lost in contemplation while staring at the blinds, I imagined the external elements flourishing infinitely in this fertile environment, concealed from view. Consequently, I employed blinds to craft a stereoscopic landscape in “Ephemera”. I envision people moving back and forth between these blinds. They could witness various creatures depicted on the blind, symbolizing a continuous exchange between the world and us, where certain forms linger within us and coexist.</p>
+</div>
+
+<div class="gallery">
+  <img src="../images/ephemara/ephemera-1.jpg" alt="">
+  <img src="../images/ephemara/ephemera-2.jpg" alt="">
+  <img src="../images/ephemara/ephemera-3.jpg" alt="">
+  <img src="../images/ephemara/ephemera-4.jpg" alt="">
+  <img src="../images/ephemara/ephemera-5.jpg" alt="">
+  <img src="../images/ephemara/ephemera-6.jpg" alt="">
+  <img src="../images/ephemara/ephemera-7.jpg" alt="">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <img id="lightboxImg" src="">
+</div>
+
+<script>
+  document.querySelectorAll('.gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      lightboxImg.src = img.src;
+      lightbox.style.display = 'flex';
+    });
+  });
+
+  document.getElementById('lightbox').addEventListener('click', () => {
+    document.getElementById('lightbox').style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
